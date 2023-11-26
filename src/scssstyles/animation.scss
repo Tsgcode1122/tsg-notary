@@ -1,0 +1,55 @@
+/* animation */
+
+.swipe-up {
+  animation: swipeUp 1s ease-in-out;
+}
+@keyframes swipeUp {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/*  */
+.swipe-down {
+  animation: swipeDownAnimation 1s ease-in-out;
+}
+
+@keyframes swipeDownAnimation {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* 
+ */
+.swipe-right {
+  animation: swipeRightAnimation 0.5s ease-in-out;
+}
+
+@keyframes swipeRightAnimation {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 
+ */
+.zoom-in {
+  animation: zoomIn 1s ease-in-out;
+  transform: scale(1);
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

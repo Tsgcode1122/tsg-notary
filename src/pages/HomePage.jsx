@@ -54,6 +54,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
       <div className="Cont-Design">
         <ContactBox />
       </div>
