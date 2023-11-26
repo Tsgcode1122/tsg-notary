@@ -1,4 +1,4 @@
-$icon-height: 30px;
+$icon-height: 35px;
 $NavSmall-font: 18px;
 $NavBig-font: 20px;
 $primary-color: white;
@@ -9,10 +9,13 @@ $font-family: "Gelasio", serif;
   position: fixed;
   z-index: 999;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
 }
 .nav-height-bc {
-  height: 2.79rem;
+  height: 3.5rem;
   background-color: white;
 }
 .nav-logo-hamburger {
@@ -21,8 +24,11 @@ $font-family: "Gelasio", serif;
   background-color: $primary-color;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
-  border-bottom: 1px solid $bright-color;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid $bright-color;
 }
 .nav-big {
   display: none;
@@ -41,11 +47,10 @@ $font-family: "Gelasio", serif;
   cursor: pointer;
   background: none;
   border: none;
+  // padding: 0;
+  // margin: 0;
 }
-.nav-small {
-  top: 0;
-  z-index: 999;
-}
+
 .nav-hamburger img {
   background: none;
   background-color: $bright-color;
@@ -60,17 +65,19 @@ $font-family: "Gelasio", serif;
 
 .nav-content {
   display: flex;
+  position: fixed;
+
   flex-direction: column;
   box-shadow:
     0 2px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px 20px;
-  position: absolute;
+
   background-color: $primary-color;
   color: $primary-color;
-  margin: 0.5rem;
-  z-index: 999;
-  // max-width: 100%;
+  margin: 0;
+  z-index: 100;
+  // width: 100%;
   opacity: 0;
   top: 0;
   right: 0;
@@ -83,7 +90,11 @@ $font-family: "Gelasio", serif;
   transform: translateY(0);
   ul {
     list-style: none;
-    padding: 1rem;
+    padding-left: 2rem;
+
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   ul li a {
     margin-left: 0rem;
@@ -117,11 +128,12 @@ $font-family: "Gelasio", serif;
 .nav-content.active {
   max-height: 100vh;
   opacity: 1;
+
   transform: translateY(0);
 }
 .nav-list img {
   max-width: 100%;
-  max-width: 100%;
+
   height: 20px;
 }
 .nav-list {
@@ -147,6 +159,46 @@ $font-family: "Gelasio", serif;
 }
 
 // media////////////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 320px) {
+  .nav-logo-hamburger {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-content ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 399px) {
+  .nav-logo-hamburger {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-content ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .nav-logo-hamburger {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-content ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav-logo-hamburger {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-content ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 @media screen and (min-width: 700px) {
   .nav-small {
     display: none;
