@@ -1,0 +1,442 @@
+$icon-height: 30px;
+$HomeSmall-font: 18px;
+$articleSmall-font: 16px;
+$articleSmallSize-font: 14px;
+$articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
+$HomeBig-font: 35px;
+$HomeBigger-font: 50px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+
+.home {
+  position: relative;
+
+  height: 70vh;
+  overflow: hidden;
+  background-attachment: scroll;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
+    url(../homebackground/home3.jpg) center/cover;
+}
+.text-container {
+  position: absolute;
+  padding: 8rem 2rem;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: left;
+  color: $primary-color;
+  z-index: 1;
+  .text-span {
+    font-style: italic;
+    color: $bright-color;
+    font-size: $HomeSmall-font;
+  }
+  .home-cta {
+    display: flex;
+    // max-width: 70%;
+    gap: 1rem;
+    flex-direction: row;
+    button {
+      padding: 1rem;
+
+      margin: 0;
+      background-color: $bright-color;
+      color: $primary-color;
+      text-align: left;
+      cursor: pointer;
+      box-shadow:
+        0 1px 3px rgba(255, 255, 255, 0.5),
+        0 1px 2px rgba(255, 255, 255, 0.1);
+      border-radius: 20px 20px;
+      border: 0.1px solid $bright-color;
+    }
+    button:hover {
+      color: $bright-color;
+      background: none;
+    }
+    button:nth-child(2) {
+      color: $bright-color;
+      background: none;
+      cursor: context-menu;
+    }
+    button:nth-child(2):hover {
+      background-color: $bright-color;
+      color: $primary-color;
+      cursor: context-menu;
+    }
+  }
+  article {
+    font-size: $articleSmall-font;
+  }
+  h1 {
+    font-size: $HomeBig-font;
+    font-family: $font-family;
+    margin: 0;
+    span {
+      color: $bright-color;
+    }
+  }
+}
+.Cont-Design {
+  position: relative;
+
+  margin-top: -40px;
+}
+// media
+@media screen and (max-width: 320px) {
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 6rem 1rem;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1rem;
+      flex-direction: column;
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleSmallSize-font;
+    }
+    h1 {
+      font-size: $HomeSmallSize-font;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 321px) and (max-width: 399px) {
+  .Cont-Design {
+    position: relative;
+
+    margin-top: -60px;
+  }
+  .home {
+    height: 80vh;
+  }
+  .text-container {
+    padding: 8rem 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1rem;
+      flex-direction: column;
+      max-width: 80%;
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleSmallSize-font;
+    }
+    h1 {
+      font-size: 25px;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .Cont-Design {
+    position: relative;
+
+    margin-top: -60px;
+  }
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 10rem 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+      max-width: 70%;
+      flex-direction: column;
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: 17px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Cont-Design {
+    position: relative;
+    margin-top: -80px;
+  }
+  .home {
+    height: 75vh;
+  }
+  .text-container {
+    padding: 8rem 2rem;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1rem;
+
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBig-font;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .home {
+    height: 80vh;
+  }
+  .text-container {
+    padding: 8rem 2rem;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1rem;
+      display: flex;
+      flex-direction: row;
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBig-font;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 12rem 2rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBig-font;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 12rem 3rem;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBig-font;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 10rem 3rem;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+      flex-direction: row;
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBigger-font;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Cont-Design {
+    position: relative;
+
+    margin-top: -120px;
+  }
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 10rem 5rem;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBigger-font;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  .home {
+    height: 90vh;
+  }
+  .text-container {
+    padding: 10rem 5rem;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .text-span {
+      font-size: $HomeSmall-font;
+    }
+    .home-cta {
+      gap: 1.5rem;
+
+      button {
+        padding: 1rem;
+        margin: 0;
+      }
+    }
+    article {
+      font-size: $articleBig-font;
+    }
+    h1 {
+      font-size: $HomeBigger-font;
+      margin: 0;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Cont-Design {
+    position: relative;
+
+    margin-top: -150px;
+  }
+  .home {
+    height: 100vh;
+  }
+  .text-container {
+    padding: 10rem 6rem;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
