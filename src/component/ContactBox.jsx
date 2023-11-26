@@ -1,10 +1,8 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import "../scssstyles/contactBox.scss";
-import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 
 const ContactBox = () => {
-  useBottomToTopSwipe(".contact-info");
   return (
     <div className="contact-info">
       <div className="contact-box-1">
