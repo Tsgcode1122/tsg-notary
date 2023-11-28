@@ -1,0 +1,349 @@
+$icon-height: 30px;
+$HomeSmall-font: 21px;
+$articleSmall-font: 16px;
+$articleSmallSize-font: 15px;
+$articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
+$HomeBig-font: 35px;
+$HomeBigger-font: 50px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+$font-article: Inconsolata, monospace;
+$font-h4: "Gelasio", serif;
+$font-h2: "Suranna", serif;
+
+//========================== service styling==============================
+.services-list {
+  padding: 2rem;
+
+  .services-heading {
+    h4 {
+      font-family: $font-h4;
+      font-style: italic;
+      color: $bright-color;
+      font-weight: 500;
+
+      font-size: 18px;
+    }
+    h2 {
+      font-family: $font-h4;
+      color: $secondary-color;
+      font-weight: 500;
+      font-size: 25px;
+    }
+  }
+
+  .service-item {
+    transition: height 0.3s ease;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      width: 500px;
+      height: 230px;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h4 {
+      font-family: $font-h4;
+      font-style: italic;
+      color: $bright-color;
+      font-weight: 500;
+      padding: 0;
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+      font-size: 18px;
+    }
+    .service-content {
+      article {
+        color: $secondary-color;
+        font-size: 15px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+        transition: transform 1.3s ease;
+      }
+    }
+  }
+}
+//========================== why us==============================
+.why-us {
+  background-attachment: scroll;
+  background: url(../images/slider-bg.png) center/cover;
+  padding: 2rem;
+  .why-us-1 {
+    h4 {
+      font-family: $font-h4;
+      font-style: italic;
+      color: $bright-color;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      margin-left: 0;
+      margin-top: 0.4rem;
+      margin-right: 0rem;
+      font-size: 18px;
+    }
+    h2 {
+      font-family: $font-h4;
+      color: $primary-color;
+      font-weight: 500;
+      font-size: 25px;
+    }
+    article {
+      color: $primary-color;
+      font-size: 14px;
+      font-family: $font-article;
+      line-height: 1.5;
+      text-align: justify;
+      font-weight: normal;
+      padding-bottom: 1rem;
+
+      transition: transform 1.3s ease;
+    }
+    ul {
+      padding: 0;
+      .list-1 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      .list-2 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      .list-3 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      .list-4 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      .list-5 {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      li {
+        list-style: none;
+        svg {
+          color: $bright-color;
+          height: 30px;
+          width: 30px;
+          border: 1px solid $primary-color;
+          border-radius: 50%;
+          padding: 0.5rem;
+          background-color: $primary-color;
+
+          box-shadow:
+            0 2px 30px rgba(255, 255, 255, 0.1),
+            0 10px 20px rgba(255, 254, 254, 0.1);
+        }
+      }
+    }
+  }
+  .why-us-2 {
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  }
+}
+//========================== percentage==============================
+.Percentage {
+  padding: 2rem;
+
+  img {
+    max-width: 100%;
+    background-color: $bright-color;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid $secondary-color;
+    box-shadow:
+      0 2px 30px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .percentage-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    .percent-heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $secondary-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+        font-size: 18px;
+      }
+    }
+    .progress-bar .progress-bar-1 {
+      height: 20px;
+      width: 100%;
+      background-color: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+
+      .color-line {
+        height: 100%;
+        width: 80%;
+        background-color: $bright-color; // Adjust the color as needed
+        animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .end-box {
+        width: 40px; // Adjust the size of the end box
+        height: 40px;
+        background-color: $secondary-color;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        margin-left: -2rem;
+        left: 80%;
+        animation: moveEndBox 2s ease-in-out;
+      }
+    }
+
+    @keyframes moveColorLine {
+      from {
+        width: 0;
+      }
+      to {
+        width: 80%;
+      }
+    }
+    @keyframes moveEndBox {
+      from {
+        left: 0;
+      }
+      to {
+        left: 80%; // Should match the final width of the color line
+      }
+    }
+    //========================== % 2==============================
+    .progress-bar .progress-bar-2 {
+      height: 20px;
+      width: 100%;
+      background-color: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+
+      .color-line {
+        height: 100%;
+        width: 90%;
+        background-color: $bright-color; // Adjust the color as needed
+        animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .end-box {
+        width: 40px; // Adjust the size of the end box
+        height: 40px;
+        background-color: $secondary-color;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        margin-left: -2rem;
+        left: 90%;
+        animation: moveEndBox2 2s ease-in-out;
+      }
+    }
+
+    @keyframes moveColorLine2 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 90%;
+      }
+    }
+    @keyframes moveEndBox2 {
+      from {
+        left: 0;
+      }
+      to {
+        left: 90%; // Should match the final width of the color line
+      }
+    }
+    //========================== %3==============================
+    .progress-bar .progress-bar-3 {
+      height: 20px;
+      width: 100%;
+      background-color: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+
+      .color-line {
+        height: 100%;
+        width: 95%;
+        background-color: $bright-color;
+        animation: moveColorLine3 2s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .end-box {
+        width: 40px;
+        height: 40px;
+        background-color: $secondary-color;
+        border-radius: 4px;
+        position: absolute;
+        top: 0;
+        margin-left: -2rem;
+        left: 95%;
+        animation: moveEndBox3 2s ease-in-out;
+      }
+    }
+
+    @keyframes moveColorLine3 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 95%;
+      }
+    }
+    @keyframes moveEndBox3 {
+      from {
+        left: 0;
+      }
+      to {
+        left: 95%;
+      }
+    }
+  }
+}

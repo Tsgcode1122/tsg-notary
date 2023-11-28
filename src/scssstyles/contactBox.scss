@@ -1,14 +1,18 @@
-$icon-height: 30px;
 $HomeSmall-font: 18px;
+$icon-height: 30px;
 $articleSmall-font: 16px;
+$articleSmallSize-font: 15px;
 $articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
 $HomeBig-font: 35px;
 $HomeBigger-font: 50px;
 $primary-color: white;
 $secondary-color: #020a81;
 $bright-color: #fda700;
 $font-family: "Gelasio", serif;
-
+$font-article: Inconsolata, monospace;
+$font-h4: "Gelasio", serif;
+$font-h2: "Suranna", serif;
 .contact-info {
   padding: 1rem 2rem;
 }
@@ -54,7 +58,128 @@ $font-family: "Gelasio", serif;
     }
   }
 }
+//==========================Getin ==============================
+.Get-General {
+  padding: 2rem;
+  .Contact-context {
+    h4 {
+      font-family: $font-h4;
+      font-style: italic;
+      color: $bright-color;
+      font-weight: 500;
+      padding: 0;
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+    h2 {
+      font-family: $font-h4;
+      color: $secondary-color;
+      font-weight: 500;
+      font-size: 25px;
+    }
+    article {
+      color: $secondary-color;
+      font-size: 15px;
+      font-family: $font-article;
+      background: white;
+      line-height: 1.5;
+
+      text-align: justify;
+      font-weight: normal;
+      padding-bottom: 1rem;
+      transition: transform 1.3s ease-in-out;
+    }
+  }
+}
+//==========================contact form ==============================
+
+.Contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  box-shadow:
+    0 2px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  form {
+    display: grid;
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $secondary-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        box-shadow: 0 2px 30px $secondary-color 0 10px 20px $secondary-color;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: $bright-color;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+      ::placeholder {
+        opacity: 0.2;
+        font-style: italic;
+      }
+    }
+  }
+}
+
 //
+//==========================map ==============================
+.contact-map {
+  padding: 2rem;
+  .map-img {
+    margin-top: 2rem;
+    img {
+      max-width: 100%;
+
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  }
+}
+//==========================map style ==============================
+
 // media
 @media screen and (max-width: 320px) {
   .contact-info {
@@ -197,7 +322,10 @@ $font-family: "Gelasio", serif;
 
 @media screen and (min-width: 600px) {
   .contact-info {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .contact-box-1 {
     display: grid;
@@ -225,7 +353,10 @@ $font-family: "Gelasio", serif;
 
 @media screen and (min-width: 700px) {
   .contact-info {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .contact-box-1 {
     display: grid;
@@ -253,7 +384,10 @@ $font-family: "Gelasio", serif;
 
 @media screen and (min-width: 800px) {
   .contact-info {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .contact-box-1 {
     display: grid;
@@ -280,7 +414,10 @@ $font-family: "Gelasio", serif;
 }
 @media screen and (min-width: 900px) {
   .contact-info {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .contact-box-1 {
     display: flex;
@@ -322,7 +459,10 @@ $font-family: "Gelasio", serif;
 }
 @media screen and (min-width: 1000px) {
   .contact-info {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   .contact-box-1 {
     display: flex;
@@ -366,7 +506,10 @@ $font-family: "Gelasio", serif;
 }
 @media screen and (min-width: 1200px) {
   .contact-info {
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .contact-box-1 {
     display: flex;
@@ -406,9 +549,6 @@ $font-family: "Gelasio", serif;
   }
 }
 @media screen and (min-width: 1300px) {
-  .contact-info {
-    padding: 5rem;
-  }
   .contact-box-1 {
     display: flex;
     margin: 0;

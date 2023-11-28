@@ -11,7 +11,7 @@ $font-family: "Gelasio", serif;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+
   width: 100%;
 }
 .nav-height-bc {
@@ -47,8 +47,8 @@ $font-family: "Gelasio", serif;
   cursor: pointer;
   background: none;
   border: none;
-  // padding: 0;
-  // margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-hamburger img {
@@ -64,7 +64,6 @@ $font-family: "Gelasio", serif;
 }
 
 .nav-content {
-  display: flex;
   position: fixed;
 
   flex-direction: column;
@@ -91,7 +90,7 @@ $font-family: "Gelasio", serif;
   ul {
     list-style: none;
     padding-left: 2rem;
-
+    display: none;
     padding-right: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -128,8 +127,11 @@ $font-family: "Gelasio", serif;
 .nav-content.active {
   max-height: 100vh;
   opacity: 1;
-
+  display: block;
   transform: translateY(0);
+}
+.nav-content.active ul {
+  display: block;
 }
 .nav-list img {
   max-width: 100%;

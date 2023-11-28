@@ -30,7 +30,7 @@ $font-family: "Gelasio", serif;
   gap: 2rem;
   text-align: left;
   color: $primary-color;
-  z-index: 1;
+  // z-index: 1;
   .text-span {
     font-style: italic;
     color: $bright-color;
@@ -39,6 +39,7 @@ $font-family: "Gelasio", serif;
   .home-cta {
     display: flex;
     // max-width: 70%;
+
     gap: 1rem;
     flex-direction: row;
     button {
@@ -87,6 +88,7 @@ $font-family: "Gelasio", serif;
 
   margin-top: -40px;
 }
+
 // media
 @media screen and (max-width: 320px) {
   .home {

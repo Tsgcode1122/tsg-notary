@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../component/Navbar";
-import "../index.scss";
+
 const ServicePage = () => {
   return (
     <>

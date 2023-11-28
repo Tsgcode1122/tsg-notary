@@ -1,0 +1,72 @@
+$HomeSmall-font: 18px;
+$icon-height: 30px;
+$articleSmall-font: 16px;
+$articleSmallSize-font: 15px;
+$articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
+$HomeBig-font: 35px;
+$HomeBigger-font: 50px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+$font-article: Inconsolata, monospace;
+$font-h4: "Gelasio", serif;
+$font-h2: "Suranna", serif;
+
+//=======================Footer==============================
+Footer {
+  padding: 2rem;
+  background-attachment: scroll;
+  background: url(../images/slider-bg.png) center/cover;
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .footer-column {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        display: flex;
+        font-size: 18px;
+      }
+      ul {
+        list-style: none;
+        li {
+          display: flex;
+          flex-direction: row;
+          .f-icon {
+            padding: 0;
+            svg {
+              color: $bright-color;
+            }
+          }
+          article {
+            color: $secondary-color;
+            font-size: 15px;
+            font-family: $font-article;
+            line-height: 1.5;
+            text-align: justify;
+            font-weight: normal;
+            padding-bottom: 1rem;
+            transition: transform 1.3s ease-in-out;
+          }
+        }
+      }
+      .social-icons {
+        a {
+          svg {
+            color: $bright-color;
+          }
+        }
+      }
+    }
+  }
+}

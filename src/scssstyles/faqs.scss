@@ -1,0 +1,115 @@
+$icon-height: 30px;
+$HomeSmall-font: 21px;
+$articleSmall-font: 16px;
+$articleSmallSize-font: 15px;
+$articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
+$HomeBig-font: 35px;
+$HomeBigger-font: 50px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+$font-article: Inconsolata, monospace;
+$font-h4: "Gelasio", serif;
+$font-h2: "Suranna", serif;
+.Faqqs {
+  padding: 2rem;
+  background-attachment: scroll;
+  background: #f2f2f2;
+  .Faqs-list {
+    .Faqs-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      article {
+        color: $secondary-color;
+        font-size: 15px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+        transition: transform 1.3s ease-in-out;
+      }
+    }
+
+    .Faqs-item {
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+      }
+      .Faqs-header {
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 1rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 1rem;
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          svg {
+            color: $bright-color;
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .Faqs-content {
+        max-height: 0;
+        // opacity: 0;
+        transition:
+          max-height 0.3s ease-in-out,
+          opacity 0.1s ease-in-out;
+        &.open {
+          max-height: 500px;
+          // opacity: 1;
+        }
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+          font-family: $font-article;
+          background: white;
+          line-height: 1.5;
+          padding: 1rem;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease-in-out;
+        }
+      }
+    }
+  }
+  .Faqs-img {
+    img {
+      max-width: 100%;
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+  }
+}
