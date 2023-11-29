@@ -39,7 +39,7 @@ const Whychoose = () => {
                     ? newCounts
                     : prevCounts;
                 });
-              }, 5);
+              }, 200);
 
               return () => clearInterval(intervalId);
             }

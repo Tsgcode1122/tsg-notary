@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../component/Navbar";
 import "../styles.scss";
 import "../scssstyles/home.scss";
-import ContactBox from "../component/ContactBox";
+
 import WhoAre from "../component/WhoAre";
 import WhyUs from "../component/WhyUs";
 import Whychoose from "../component/Whychoose";
@@ -10,7 +10,9 @@ import ServicesList from "../component/ServicesList";
 import Percentage from "../component/Percentage";
 import Faqs from "../component/Faqs";
 import Getin from "../component/Getin";
+import ContactBox from "../component/Contactbox";
 import Footer from "../component/Footer";
+import ScrollToTopButton from "../component/ScrollToTopButton";
 
 const HomePage = () => {
   const initialText = "Certified Notary Services for Every Document";
@@ -45,7 +47,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <section className="home">
+      <section className="home" id="home-page">
         <div className="text-container">
           <span className="text-span">Tsg Notary Service</span>
           <h1>
@@ -66,6 +68,7 @@ const HomePage = () => {
       <div className="Cont-Design">
         <ContactBox />
       </div>
+
       <WhoAre />
       <Whychoose />
       <ServicesList />
@@ -74,6 +77,7 @@ const HomePage = () => {
       <Faqs />
       <Getin />
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

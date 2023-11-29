@@ -4,18 +4,18 @@ import "../scssstyles/faqs.scss";
 import Faqsimg from "../images/notary-05.jpg";
 const Faqs = () => {
   const Faqs = [
-    {
-      id: 1,
-      question: "What is a notary public?",
-      answer:
-        "A notary public is a person authorized to perform legal formalities, especially to draw up or certify contracts, deeds, and other documents for use in other jurisdictions.",
-    },
-    {
-      id: 2,
-      question: "How much does notary service cost?",
-      answer:
-        "Notary service costs can vary. It is recommended to check with the notary public directly for their fees. Many notaries charge a flat fee for each signature they notarize.",
-    },
+    // {
+    //   id: 1,
+    //   question: "What is a notary public?",
+    //   answer:
+    //     "A notary public is a person authorized to perform legal formalities, especially to draw up or certify contracts, deeds, and other documents for use in other jurisdictions.",
+    // },
+    // {
+    //   id: 2,
+    //   question: "How much does notary service cost?",
+    //   answer:
+    //     "Notary service costs can vary. It is recommended to check with the notary public directly for their fees. Many notaries charge a flat fee for each signature they notarize.",
+    // },
     {
       id: 3,
       question: "What documents require notarization?",

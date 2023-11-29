@@ -347,3 +347,2866 @@ $font-h2: "Suranna", serif;
     }
   }
 }
+//========================== media==============================
+@media screen and (max-width: 320px) {
+}
+@media (min-width: 321px) and (max-width: 399px) {
+}
+@media (min-width: 400px) and (max-width: 499px) {
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 700px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 2rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 2rem;
+    .why-us-1 {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 14px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 20% 80%;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 20% 80%;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 20% 80%;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 20% 80%;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 20% 80%;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    padding: 2rem;
+
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      margin-bottom: 2rem;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 2rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 2rem;
+
+    .why-us-1 {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 14px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: flex;
+          flex-direction: column;
+          max-width: 340px;
+        }
+        .list-2 {
+          display: flex;
+          flex-direction: column;
+          max-width: 340px;
+        }
+        .list-3 {
+          display: flex;
+          flex-direction: column;
+          max-width: 340px;
+        }
+        .list-4 {
+          display: flex;
+          flex-direction: column;
+          max-width: 340px;
+        }
+        .list-5 {
+          display: flex;
+          flex-direction: column;
+          max-width: 340px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 1rem;
+      margin-bottom: 4rem;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 3rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    .why-us-1 {
+      // min-width: 400px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 14px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 5rem;
+      img {
+        max-width: 100%;
+        height: 600px;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      width: 400px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 400px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 3rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    .why-us-1 {
+      // min-width: 400px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 14px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 1rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 5rem;
+      img {
+        max-width: 100%;
+        height: 600px;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      min-width: 300px;
+      height: 350px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 500px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 3rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 17px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    .why-us-1 {
+      // min-width: 400px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 15px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 0rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 5rem;
+      img {
+        max-width: 100%;
+        max-width: 470px;
+        height: 600px;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      min-width: 300px;
+      height: 350px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 600px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 5rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 17px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    .why-us-1 {
+      // min-width: 400px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 15px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 0rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          max-width: 500px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 5rem;
+      img {
+        max-width: 100%;
+        max-width: 470px;
+        height: 600px;
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      min-width: 300px;
+      height: 350px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 600px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+  //========================== service styling==============================
+  .services-list {
+    padding-left: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 5rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 17px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 5px;
+    .why-us-1 {
+      max-width: 650px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 17px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 0rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 650px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 650px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 650px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 650px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 650px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 5rem;
+
+      img {
+        max-width: 100%;
+        min-width: 400px;
+        height: 700px;
+
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      min-width: 500px;
+      height: 350px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 600px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  //========================== service styling==============================
+  .services-list {
+    padding-left: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 6rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      transition: height 0.3s ease;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 17px;
+          font-family: $font-article;
+          line-height: 1.5;
+          text-align: justify;
+          font-weight: normal;
+          padding-bottom: 1rem;
+          transition: transform 1.3s ease;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    .why-us-1 {
+      max-width: 800px;
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        margin-left: 0;
+        margin-top: 0.4rem;
+        margin-right: 0rem;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 17px;
+        font-family: $font-article;
+        line-height: 1.5;
+        text-align: justify;
+        font-weight: normal;
+        padding-bottom: 0rem;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0;
+        .list-1 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 350px;
+        }
+        .list-2 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 350px;
+        }
+        .list-3 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 350px;
+        }
+        .list-4 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 350px;
+        }
+        .list-5 {
+          display: grid;
+          grid-template-columns: 15% 85%;
+          min-width: 350px;
+        }
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: $primary-color;
+
+            box-shadow:
+              0 2px 30px rgba(255, 255, 255, 0.1),
+              0 10px 20px rgba(255, 254, 254, 0.1);
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      padding-top: 2rem;
+
+      img {
+        max-width: 100%;
+        max-width: 450px;
+        height: 600px;
+
+        background-color: $bright-color;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid $secondary-color;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    gap: 20px;
+    img {
+      max-width: 100%;
+      background-color: $bright-color;
+      padding-left: 0.5rem;
+      min-width: 550px;
+      height: 350px;
+      padding-bottom: 0.5rem;
+      border: 1px solid $secondary-color;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .percentage-container {
+      text-align: center;
+      padding-top: 2rem;
+      margin-bottom: 4rem;
+      min-width: 650px;
+      .percent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        h4 {
+          font-family: $font-h4;
+          font-style: italic;
+          color: $secondary-color;
+          font-weight: 500;
+          padding: 0;
+          margin-top: 0rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0rem;
+          font-size: 18px;
+        }
+      }
+      .progress-bar .progress-bar-1 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 80%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 80%;
+          animation: moveEndBox 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes moveEndBox {
+        from {
+          left: 0;
+        }
+        to {
+          left: 80%; // Should match the final width of the color line
+        }
+      }
+      //========================== % 2==============================
+      .progress-bar .progress-bar-2 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 90%;
+          background-color: $bright-color; // Adjust the color as needed
+          animation: moveColorLine2 2s ease-in-out; // Adjust the animation duration
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px; // Adjust the size of the end box
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 90%;
+          animation: moveEndBox2 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine2 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 90%;
+        }
+      }
+      @keyframes moveEndBox2 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%; // Should match the final width of the color line
+        }
+      }
+      //========================== %3==============================
+      .progress-bar .progress-bar-3 {
+        height: 20px;
+        width: 100%;
+        background-color: #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .color-line {
+          height: 100%;
+          width: 95%;
+          background-color: $bright-color;
+          animation: moveColorLine3 2s ease-in-out;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .end-box {
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border-radius: 4px;
+          position: absolute;
+          top: 0;
+          margin-left: -2rem;
+          left: 95%;
+          animation: moveEndBox3 2s ease-in-out;
+        }
+      }
+
+      @keyframes moveColorLine3 {
+        from {
+          width: 0;
+        }
+        to {
+          width: 95%;
+        }
+      }
+      @keyframes moveEndBox3 {
+        from {
+          left: 0;
+        }
+        to {
+          left: 95%;
+        }
+      }
+    }
+  }
+}

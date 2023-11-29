@@ -15,7 +15,7 @@ $font-family: "Gelasio", serif;
   width: 100%;
 }
 .nav-height-bc {
-  height: 3.5rem;
+  height: 3.4rem;
   background-color: white;
 }
 .nav-logo-hamburger {
@@ -35,11 +35,15 @@ $font-family: "Gelasio", serif;
   z-index: 999;
 }
 .nav-logo {
-  h4 {
-    color: $secondary-color;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
+  a {
+    text-decoration: none;
+    z-index: 999;
+    h4 {
+      color: $secondary-color;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
@@ -133,6 +137,7 @@ $font-family: "Gelasio", serif;
 .nav-content.active ul {
   display: block;
 }
+
 .nav-list img {
   max-width: 100%;
 
@@ -144,22 +149,29 @@ $font-family: "Gelasio", serif;
   justify-content: space-between;
 }
 .nav-get {
-  h4 {
-    color: $secondary-color;
-    font-size: $NavSmall-font;
-    font-family: $font-family;
-    padding: 5px;
-    margin: 0;
-    font-weight: normal;
-    cursor: pointer;
-    border: 1px solid $secondary-color;
-    border-radius: 5px;
-  }
-  H4:hover {
-    color: $bright-color;
+  a {
+    text-decoration: none;
+    display: none;
+    h4 {
+      color: $secondary-color;
+      font-size: $NavSmall-font;
+      font-family: $font-family;
+      padding: 5px;
+      margin: 0;
+      font-weight: normal;
+      cursor: pointer;
+      border: 1px solid $secondary-color;
+      border-radius: 5px;
+    }
+
+    H4:hover {
+      color: $bright-color;
+    }
   }
 }
-
+.nav-content.active .nav-get a {
+  display: block;
+}
 // media////////////////////////////////////////////////////////////////////////////////
 @media screen and (max-width: 320px) {
   .nav-logo-hamburger {
@@ -249,20 +261,23 @@ $font-family: "Gelasio", serif;
       color: $bright-color;
     }
   }
-  .nav-get {
-    h4 {
-      color: $secondary-color;
-      font-size: $NavSmall-font;
-      font-family: $font-family;
-      padding-top: 5px;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-      margin: 0;
+  .nav-get-big {
+    a {
+      text-decoration: none;
+      h4 {
+        color: $secondary-color;
+        font-size: $NavSmall-font;
+        font-family: $font-family;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        margin: 0;
 
-      cursor: pointer;
-      border: 1px solid $secondary-color;
-      border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+      }
     }
   }
 }

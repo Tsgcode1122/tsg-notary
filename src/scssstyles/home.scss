@@ -10,7 +10,7 @@ $primary-color: white;
 $secondary-color: #020a81;
 $bright-color: #fda700;
 $font-family: "Gelasio", serif;
-
+$font-h4: "Gelasio", serif;
 .home {
   position: relative;
 
@@ -21,6 +21,7 @@ $font-family: "Gelasio", serif;
     linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
     url(../homebackground/home3.jpg) center/cover;
 }
+
 .text-container {
   position: absolute;
   padding: 8rem 2rem;

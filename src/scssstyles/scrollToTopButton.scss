@@ -1,0 +1,43 @@
+$icon-height: 35px;
+$NavSmall-font: 18px;
+$NavBig-font: 20px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+
+//=======================scroolw==============================
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  z-index: 999;
+  right: 20px;
+  cursor: pointer;
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scroll-to-top-button:hover {
+  background-color: $bright-color;
+  transform: scale(1.1);
+  animation: none;
+}

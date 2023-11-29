@@ -1,11 +1,19 @@
 import React from "react";
 import Navbar from "../component/Navbar";
-
+import Footer from "../component/Footer";
+import ServicesList from "../component/ServicesList";
+import ScrollToTopButton from "../component/ScrollToTopButton";
 const ServicePage = () => {
   return (
     <>
       <Navbar />
-      <h1>service</h1>
+      <div className="about-heading">
+        <h1>Services We Offer</h1>
+      </div>
+      <ServicesList />
+
+      <Footer />
+      <ScrollToTopButton />
     </>
   );
 };

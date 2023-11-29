@@ -21,13 +21,11 @@ const WhyUs = () => {
           <article>
             Why choose us? We stand out through our unwavering dedication to
             accuracy, attention to detail, and a seamless notarization
-            experience tailored to your needs. Our team of experienced notary
-            public professionals is here to ensure that every document is
-            handled with the utmost care and authenticity.
+            experience tailored to your needs.
           </article>
           {/* list */}
           <ul>
-            <li className="list-1">
+            {/* <li className="list-1">
               <FaShieldAlt className="why-us-icon" />
               <div>
                 <h4>Secure and Confidential</h4>
@@ -36,7 +34,7 @@ const WhyUs = () => {
                   confidentiality, ensuring your privacy and peace of mind.
                 </article>
               </div>
-            </li>
+            </li> */}
             <li className="list-2">
               <FaUserCheck className="why-us-icon" />
               <div>

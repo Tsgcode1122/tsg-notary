@@ -1,23 +1,29 @@
 import React, { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import hamburger from "../iconimage/menu1.png";
 import navClick from "../iconimage/cursor.png";
 import "../scssstyles/nav.scss";
 
 const Navbar = () => {
   const [isNavVisible, setNavVisibility] = useState(false);
+  const navigate = useNavigate();
 
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
 
+  const reloadHomePage = () => {
+    navigate("/", { replace: true });
+  };
   return (
     <>
       <nav className="Nav">
         <div className="nav-small">
           <div className="nav-logo-hamburger">
             <div className="nav-logo">
-              <h4>Tsg-Notary</h4>
+              <Link to="/">
+                <h4>Tsg-Notary</h4>
+              </Link>
             </div>
             <div>
               <button className="nav-hamburger" onClick={toggleNav}>
@@ -28,7 +34,9 @@ const Navbar = () => {
           <div className={`nav-content${isNavVisible ? " active" : ""}`}>
             <div className="nav-logo-hamburger">
               <div className="nav-get">
-                <h4>Get in Touch</h4>
+                <Link to="/ContactPage" className="nav-list">
+                  <h4>Get in Touch</h4>
+                </Link>
               </div>
               <div>
                 <button className="nav-hamburger" onClick={toggleNav}>
@@ -37,7 +45,7 @@ const Navbar = () => {
               </div>
             </div>
             <ul>
-              <li>
+              <li onClick={reloadHomePage}>
                 <Link to="/" className="nav-list">
                   Home <img src={navClick} />
                 </Link>
@@ -62,7 +70,9 @@ const Navbar = () => {
         </div>
         <div className="nav-big">
           <div className="nav-logo">
-            <h4>Tsg-Notary</h4>
+            <Link to="/">
+              <h4>Tsg-Notary</h4>
+            </Link>
           </div>
           <ul className="nav-big-content">
             <li className="nav-lists">
@@ -78,8 +88,10 @@ const Navbar = () => {
               <Link to="/ContactPage">Contact</Link>
             </li>
           </ul>
-          <div className="nav-get">
-            <h4>Get in Touch</h4>
+          <div className="nav-get-big">
+            <Link to="/ContactPage">
+              <h4>Get in Touch</h4>
+            </Link>
           </div>
         </div>
       </nav>
