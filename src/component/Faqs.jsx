@@ -8,7 +8,7 @@ import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Faqs = () => {
-  useZoomInAnimation(".Faqs-list");
+  useLeftToRightSwipe(".Faqs-heading");
   useRightToLeftSwipe(".Faqs-img");
   const Faqs = [
     // {

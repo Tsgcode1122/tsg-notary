@@ -14,14 +14,14 @@ import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const WhyUs = () => {
-  useBottomToTopSwipe(".why-us-1");
+  useLeftToRightSwipe(".h2-why");
   useRightToLeftSwipe(".why-us-2");
   return (
     <>
       <section className="why-us">
         <div className="why-us-1">
           <h4>Why us</h4>
-          <h2>
+          <h2 className="h2-why">
             Gratitude for Your Trust: Recognizing Your Choices, Honored You
             Chose Us.
           </h2>

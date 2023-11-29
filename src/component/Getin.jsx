@@ -9,7 +9,7 @@ import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Getin = () => {
-  useBottomToTopSwipe(".Contact-context");
+  useLeftToRightSwipe(".Contact-context");
   useLeftToRightSwipe(".map");
   useRightToLeftSwipe(".map-img");
 
