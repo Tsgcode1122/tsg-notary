@@ -6,10 +6,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  font-family: 'Dai Banna SIL', serif;
-  font-family: 'Gelasio', serif;
-  font-family: 'Suranna', serif;
-  font-family: 'Xanh Mono', monospace;
+
   @media screen and (max-width: 320px) {
   }
   @media (min-width: 321px) and (max-width: 399px) {
