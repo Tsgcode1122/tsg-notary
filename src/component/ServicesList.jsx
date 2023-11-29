@@ -6,7 +6,13 @@ import Sevice3img from "../images/notary3.jpeg";
 import Sevice4img from "../images/notary4.jpeg";
 import Sevice5img from "../images/notary5.jpeg";
 import Sevice6img from "../images/notary6.jpeg";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const ServicesList = () => {
+  useZoomInAnimation(".services-list");
   return (
     <div className="services-list">
       <div className="services-heading">

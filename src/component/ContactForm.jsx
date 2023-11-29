@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "../scssstyles/contactBox.scss";
-
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const ContactForm = () => {
+  useZoomInAnimation(".Contact-form");
   const [formData, setFormData] = useState({
     name: "",
     email: "",

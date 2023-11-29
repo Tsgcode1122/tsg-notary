@@ -4,7 +4,16 @@ import serviceareaimg from "../images/servicearea.jpg";
 import Exceptionimg from "../images/weight.jpg";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "../scssstyles/about.scss";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
+
 const WhoAre = () => {
+  useLeftToRightSwipe(".who-we-context");
+  useRightToLeftSwipe(".service-area-context");
+  useZoomInAnimation(".Exception-context");
   return (
     <>
       <section className="who-we">

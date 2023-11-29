@@ -8,7 +8,14 @@ import {
 } from "react-icons/fa";
 import "../scssstyles/service.scss";
 import Whyusimg from "../images/whyus.jpg";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const WhyUs = () => {
+  useBottomToTopSwipe(".why-us-1");
+  useRightToLeftSwipe(".why-us-2");
   return (
     <>
       <section className="why-us">

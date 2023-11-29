@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import "../scssstyles/service.scss";
 import Percentimg from "../images/percent.png";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Percentage = () => {
+  useLeftToRightSwipe(".percentimgs");
   useEffect(() => {
     const percentageContainers = document.querySelectorAll(".progress-bar");
 
@@ -72,7 +78,7 @@ const Percentage = () => {
           </div>
         </div>
         <div>
-          <img src={Percentimg} />
+          <img src={Percentimg} className="percentimgs" />
         </div>
       </section>
     </>

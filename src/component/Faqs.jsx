@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
 import "../scssstyles/faqs.scss";
 import Faqsimg from "../images/notary-05.jpg";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Faqs = () => {
+  useZoomInAnimation(".Faqs-list");
+  useRightToLeftSwipe(".Faqs-img");
   const Faqs = [
     // {
     //   id: 1,

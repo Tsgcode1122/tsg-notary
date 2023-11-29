@@ -224,6 +224,75 @@ $font-h2: "Suranna", serif;
       }
     }
   }
+  //==========================Getin ==============================
+  .Get-General {
+    padding: 1rem;
+    .Contact-context {
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        color: $secondary-color;
+        font-size: 15px;
+      }
+    }
+  }
+  //==========================contact form ==============================
+
+  .Contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.2rem;
+
+    form {
+      display: grid;
+      gap: 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-top: 1rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+        }
+
+        button {
+          background-color: $bright-color;
+          color: #fff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //
+  //==========================map ==============================
+  .contact-map {
+    padding: 1rem;
+    .map-img {
+      margin-top: 1rem;
+      img {
+        max-width: 260px;
+      }
+    }
+  }
+  //==========================map style ==============================
 }
 @media (min-width: 321px) and (max-width: 399px) {
   .contact-info {
@@ -269,6 +338,75 @@ $font-h2: "Suranna", serif;
       }
     }
   }
+  //==========================Getin ==============================
+  .Get-General {
+    padding: 1.5rem;
+    .Contact-context {
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        color: $secondary-color;
+        font-size: 15px;
+      }
+    }
+  }
+  //==========================contact form ==============================
+
+  .Contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    form {
+      display: grid;
+      gap: 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-top: 1rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+        }
+
+        button {
+          background-color: $bright-color;
+          color: #fff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //
+  //==========================map ==============================
+  .contact-map {
+    padding: 1.5rem;
+    .map-img {
+      margin-top: 1rem;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  //==========================map style ==============================
 }
 
 @media (min-width: 400px) and (max-width: 499px) {
@@ -318,6 +456,75 @@ $font-h2: "Suranna", serif;
       }
     }
   }
+  //==========================Getin ==============================
+  .Get-General {
+    padding: 1.5rem;
+    .Contact-context {
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        color: $secondary-color;
+        font-size: 15px;
+      }
+    }
+  }
+  //==========================contact form ==============================
+
+  .Contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    form {
+      display: grid;
+      gap: 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-top: 1rem;
+          margin-left: 0rem;
+          margin-right: 0rem;
+          margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+        }
+
+        button {
+          background-color: $bright-color;
+          color: #fff;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  //
+  //==========================map ==============================
+  .contact-map {
+    padding: 1.5rem;
+    .map-img {
+      margin-top: 1rem;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  //==========================map style ==============================
 }
 
 @media screen and (min-width: 600px) {
@@ -430,7 +637,7 @@ $font-h2: "Suranna", serif;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 20px;
       }
       h2 {
         font-family: $font-h4;
@@ -602,7 +809,7 @@ $font-h2: "Suranna", serif;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-family: $font-h4;
@@ -783,7 +990,7 @@ $font-h2: "Suranna", serif;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-family: $font-h4;
@@ -961,7 +1168,7 @@ $font-h2: "Suranna", serif;
         margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-family: $font-h4;

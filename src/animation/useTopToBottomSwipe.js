@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../scssstyles/animation.scss";
 
-const useTopToBottomSwipe = (elementSelector, rootMargin = "0px") => {
+const useTopToBottomSwipe = (elementSelector, rootMargin = "240px") => {
   useEffect(() => {
     const element = document.querySelector(elementSelector);
 
@@ -11,6 +11,8 @@ const useTopToBottomSwipe = (elementSelector, rootMargin = "0px") => {
     }
 
     const addAnimation = () => {
+      element.style.transform = "translateY(0)";
+      element.style.opacity = "1";
       element.classList.add("swipe-down");
     };
 
@@ -32,6 +34,9 @@ const useTopToBottomSwipe = (elementSelector, rootMargin = "0px") => {
     const observer = new IntersectionObserver(handleIntersection, {
       rootMargin,
     });
+
+    element.style.transition =
+      "transform 0.5s ease-in-out, opacity 0.5s ease-in-out";
 
     observer.observe(element);
 

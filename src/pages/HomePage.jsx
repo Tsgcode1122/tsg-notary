@@ -6,7 +6,7 @@ import WhyUs from "../component/WhyUs";
 import Whychoose from "../component/Whychoose";
 import ServicesList from "../component/ServicesList";
 import WhoAre from "../component/WhoAre";
-
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import Percentage from "../component/Percentage";
 import Faqs from "../component/Faqs";
 import Getin from "../component/Getin";
@@ -59,8 +59,13 @@ const HomePage = () => {
             transactions.
           </article>
           <div className="home-cta">
-            <button>Get Started Today</button>
-            <button>Schedule a Notary Appointment</button>
+            <Link to="/ContactPage">
+              {" "}
+              <button>Get Started Today</button>
+            </Link>
+            <Link to="/ContactPage">
+              <button>Schedule a Notary Appointment</button>
+            </Link>
           </div>
         </div>
       </section>

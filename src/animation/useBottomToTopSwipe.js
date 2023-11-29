@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import "../scssstyles/animation.scss";
-const useBottomToTopSwipe = (elementSelectors, rootMargin = "0px") => {
+
+const useBottomToTopSwipe = (elementSelectors, rootMargin = "200px") => {
   useEffect(() => {
     const elements = document.querySelectorAll(elementSelectors);
 
     const addAnimation = () => {
       elements.forEach((element) => {
+        element.style.transform = "translateY(0)";
+        element.style.opacity = "1";
         element.classList.add("swipe-up");
       });
     };
@@ -31,6 +34,12 @@ const useBottomToTopSwipe = (elementSelectors, rootMargin = "0px") => {
     });
 
     elements.forEach((element) => {
+      // Set initial styles
+      element.style.transform = "translateY(100%)";
+      element.style.opacity = "0";
+      // Add CSS transition for a smooth transition
+      element.style.transition =
+        "transform 0.5s ease-in-out, opacity 0.5s ease-in-out";
       observer.observe(element);
     });
 

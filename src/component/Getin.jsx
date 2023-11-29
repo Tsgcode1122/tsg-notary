@@ -3,7 +3,16 @@ import "../scssstyles/contactBox.scss";
 import ContactForm from "./ContactForm";
 import MapComponent from "./MapComponent";
 import Contactusimg from "../images/notarycontact.jpeg";
+import useZoomInAnimation from "../animation/useZoomInAnimation";
+import useLeftToRightSwipe from "../animation/useLeftToRightSwipe";
+import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
+import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
+import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Getin = () => {
+  useBottomToTopSwipe(".Contact-context");
+  useRightToLeftSwipe(".map");
+  useLeftToRightSwipe(".map-img");
+
   return (
     <>
       <section className="Get-General">

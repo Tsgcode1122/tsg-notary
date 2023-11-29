@@ -116,10 +116,211 @@ $font-h2: "Suranna", serif;
 }
 //========================== media==============================
 @media screen and (max-width: 320px) {
+  .Faqqs {
+    padding: 1rem;
+    background-attachment: scroll;
+    background: #f2f2f2;
+    .Faqs-list {
+      .Faqs-heading {
+        h4 {
+          font-size: 18px;
+        }
+        article {
+          font-size: 15px;
+        }
+      }
+
+      .Faqs-item {
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+
+        img {
+          max-width: 100%;
+        }
+        .Faqs-header {
+          h4 {
+            margin-top: 1rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            svg {
+              color: $bright-color;
+            }
+          }
+        }
+
+        .Faqs-content {
+          max-height: 0;
+          // opacity: 0;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.1s ease-in-out;
+          &.open {
+            max-height: 500px;
+            // opacity: 1;
+          }
+          article {
+            color: $secondary-color;
+            font-size: 15px;
+            font-family: $font-article;
+            background: white;
+            line-height: 1.5;
+            padding: 1rem;
+            text-align: justify;
+            font-weight: normal;
+            padding-bottom: 1rem;
+            transition: transform 1.3s ease-in-out;
+          }
+        }
+      }
+    }
+    .Faqs-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 @media (min-width: 321px) and (max-width: 399px) {
+  .Faqqs {
+    padding: 1.5rem;
+    background-attachment: scroll;
+    background: #f2f2f2;
+    .Faqs-list {
+      .Faqs-heading {
+        h4 {
+          font-size: 18px;
+        }
+        article {
+          font-size: 15px;
+        }
+      }
+
+      .Faqs-item {
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+
+        img {
+          max-width: 100%;
+        }
+        .Faqs-header {
+          h4 {
+            margin-top: 1rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            svg {
+              color: $bright-color;
+            }
+          }
+        }
+
+        .Faqs-content {
+          max-height: 0;
+          // opacity: 0;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.1s ease-in-out;
+          &.open {
+            max-height: 500px;
+            // opacity: 1;
+          }
+          article {
+            color: $secondary-color;
+            font-size: 15px;
+            font-family: $font-article;
+            background: white;
+            line-height: 1.5;
+            padding: 1rem;
+            text-align: justify;
+            font-weight: normal;
+            padding-bottom: 1rem;
+            transition: transform 1.3s ease-in-out;
+          }
+        }
+      }
+    }
+    .Faqs-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 @media (min-width: 400px) and (max-width: 499px) {
+  .Faqqs {
+    padding: 1.5rem;
+    background-attachment: scroll;
+    background: #f2f2f2;
+    .Faqs-list {
+      .Faqs-heading {
+        h4 {
+          font-size: 18px;
+        }
+        article {
+          font-size: 15px;
+        }
+      }
+
+      .Faqs-item {
+        padding: 0.2rem;
+        margin-bottom: 1rem;
+
+        img {
+          max-width: 100%;
+        }
+        .Faqs-header {
+          h4 {
+            margin-top: 1rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            svg {
+              color: $bright-color;
+            }
+          }
+        }
+
+        .Faqs-content {
+          max-height: 0;
+          // opacity: 0;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.1s ease-in-out;
+          &.open {
+            max-height: 500px;
+            // opacity: 1;
+          }
+          article {
+            color: $secondary-color;
+            font-size: 15px;
+            font-family: $font-article;
+            background: white;
+            line-height: 1.5;
+            padding: 1rem;
+            text-align: justify;
+            font-weight: normal;
+            padding-bottom: 1rem;
+            transition: transform 1.3s ease-in-out;
+          }
+        }
+      }
+    }
+    .Faqs-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
 @media screen and (min-width: 600px) {
 }
@@ -184,7 +385,7 @@ $font-h2: "Suranna", serif;
             margin-bottom: 1rem;
             display: flex;
             justify-content: space-between;
-            font-size: 18px;
+            font-size: 20px;
             svg {
               color: $bright-color;
               transition: transform 0.3s ease-in-out;
@@ -468,7 +669,7 @@ $font-h2: "Suranna", serif;
           color: $bright-color;
           font-weight: 500;
 
-          font-size: 18px;
+          font-size: 24px;
         }
         article {
           color: $secondary-color;

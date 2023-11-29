@@ -35,7 +35,7 @@ $font-h2: "Suranna", serif;
       color: $bright-color;
       font-weight: 500;
 
-      font-size: 18px;
+      font-size: 20px;
     }
     h2 {
       font-family: $font-h4;
@@ -293,10 +293,484 @@ $font-h2: "Suranna", serif;
   }
 }
 @media screen and (max-width: 320px) {
+  // ==============who are==============================
+  .who-we {
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    gap: 1rem;
+    .who-we-context {
+      text-align: left;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .who-we-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .service-area {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0;
+
+    gap: 1rem;
+    .service-area-context {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .service-area-img {
+      img {
+        max-width: 260px;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        box-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.1),
+          0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 10px;
+      }
+    }
+    .service-area-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin: 0;
+      padding: 10px;
+
+      .contact-icon {
+        display: flex;
+        gap: 2px;
+
+        margin: 0;
+        svg {
+          font-size: 12px;
+          color: $bright-color;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .Exception {
+    background-color: white;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+
+    gap: 1rem;
+    .Exception-context {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      article {
+        font-size: 15px;
+
+        padding-bottom: 1rem;
+      }
+      button {
+        padding: 1rem;
+
+        margin: 0;
+        background-color: $bright-color;
+        color: $primary-color;
+        text-align: left;
+        cursor: pointer;
+        box-shadow:
+          0 1px 3px rgba(21, 21, 21, 0.5),
+          0 1px 2px rgba(34, 34, 34, 0.1);
+        border-radius: 20px 20px;
+        border: 0.1px solid $bright-color;
+      }
+      button:hover {
+        color: $bright-color;
+        background: none;
+      }
+    }
+    .Exception-img {
+      img {
+        max-width: 100%;
+
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+  // why choose
+  /* why chopse */
+  .why-choose {
+    background-attachment: scroll;
+    background: url(../images/slider-bg.png) center/cover;
+
+    gap: 10px;
+    padding: 1rem 1rem;
+
+    .why-choose-1 {
+      margin: 0;
+      h2 {
+        font-size: 22px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+  }
 }
 @media (min-width: 321px) and (max-width: 399px) {
+  // ==============who are==============================
+  .who-we {
+    padding-left: 1.5rem;
+
+    padding-right: 1.5rem;
+
+    gap: 1rem;
+    .who-we-context {
+      text-align: left;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .who-we-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .service-area {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+
+    gap: 1rem;
+    .service-area-context {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .service-area-img {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+    .service-area-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin: 0;
+      padding: 10px;
+
+      .contact-icon {
+        display: flex;
+        gap: 2px;
+
+        margin: 0;
+        svg {
+          font-size: 12px;
+          color: $bright-color;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .Exception {
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+
+    gap: 1rem;
+    .Exception-context {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      article {
+        font-size: 15px;
+
+        padding-bottom: 1rem;
+      }
+      button {
+        padding: 1rem;
+
+        margin: 0;
+        background-color: $bright-color;
+        color: $primary-color;
+      }
+    }
+    .Exception-img {
+      img {
+        max-width: 100%;
+
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+  // why choose
+  /* why chopse */
+  .why-choose {
+    gap: 10px;
+    padding: 1.5rem 1.5rem;
+
+    .why-choose-1 {
+      margin: 0;
+      h2 {
+        font-size: 22px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+  }
 }
 @media (min-width: 400px) and (max-width: 499px) {
+  // ==============who are==============================
+  .who-we {
+    padding-left: 1.5rem;
+
+    padding-right: 1.5rem;
+
+    gap: 1rem;
+    .who-we-context {
+      text-align: left;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .who-we-img {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .service-area {
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0;
+
+    gap: 1rem;
+    .service-area-context {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      article {
+        font-size: 15px;
+      }
+    }
+    .service-area-img {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+      }
+    }
+    .service-area-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin: 0;
+      padding: 10px;
+
+      .contact-icon {
+        display: flex;
+        gap: 2px;
+
+        margin: 0;
+        svg {
+          font-size: 12px;
+          color: $bright-color;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .Exception {
+    background-color: white;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+
+    gap: 1rem;
+    .Exception-context {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      article {
+        font-size: 15px;
+
+        padding-bottom: 1rem;
+      }
+      button {
+        padding: 1rem;
+
+        margin: 0;
+        background-color: $bright-color;
+        color: $primary-color;
+      }
+    }
+    .Exception-img {
+      img {
+        max-width: 100%;
+
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+  // why choose
+  /* why chopse */
+  .why-choose {
+    gap: 10px;
+    padding: 1.5rem 1.5rem;
+
+    .why-choose-1 {
+      margin: 0;
+      h2 {
+        font-size: 22px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+  }
 }
 @media screen and (min-width: 600px) {
 }
@@ -324,7 +798,7 @@ $font-h2: "Suranna", serif;
         color: $bright-color;
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 20px;
       }
       h2 {
         font-family: $font-h4;
@@ -561,6 +1035,26 @@ $font-h2: "Suranna", serif;
   }
 }
 @media screen and (min-width: 900px) {
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      font-size: 28px;
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+
+      font-size: 28px;
+    }
+  }
   .who-we {
     padding-left: 3rem;
     padding-top: 1rem;
@@ -834,7 +1328,7 @@ $font-h2: "Suranna", serif;
       h4 {
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-weight: 500;
@@ -1325,6 +1819,26 @@ $font-h2: "Suranna", serif;
   }
 }
 @media screen and (min-width: 1200px) {
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      font-size: 28px;
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+
+      font-size: 28px;
+    }
+  }
   .who-we {
     padding-left: 5rem;
     padding-top: 1rem;
@@ -1343,7 +1857,7 @@ $font-h2: "Suranna", serif;
       h4 {
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-weight: 500;
@@ -1841,6 +2355,26 @@ $font-h2: "Suranna", serif;
   }
 }
 @media screen and (min-width: 1400px) {
+  // ==============about heading==============================
+  .about-heading {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h1 {
+      font-size: 28px;
+      text-align: left;
+    }
+    h4 {
+      margin-top: 1rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      margin-bottom: 1rem;
+
+      font-size: 28px;
+    }
+  }
   .who-we {
     padding-left: 6rem;
     padding-top: 1rem;
@@ -1910,7 +2444,7 @@ $font-h2: "Suranna", serif;
         color: $bright-color;
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-family: $font-h4;
@@ -2088,7 +2622,7 @@ $font-h2: "Suranna", serif;
         color: $primary-color;
         font-weight: 500;
 
-        font-size: 20px;
+        font-size: 22px;
         line-height: 100%; /* 24px */
       }
     }

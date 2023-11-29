@@ -349,10 +349,280 @@ $font-h2: "Suranna", serif;
 }
 //========================== media==============================
 @media screen and (max-width: 320px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 1rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    padding: 1rem;
+    .why-us-1 {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 22px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 13px;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    padding: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 @media (min-width: 321px) and (max-width: 399px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 1rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    padding: 1.5rem;
+    .why-us-1 {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 23px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 13px;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    padding: 1.5rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 @media (min-width: 400px) and (max-width: 499px) {
+  //========================== service styling==============================
+  .services-list {
+    padding: 1rem;
+
+    .services-heading {
+      h4 {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+    }
+
+    .service-item {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        width: 500px;
+        height: 230px;
+      }
+
+      h4 {
+        margin-top: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        font-size: 18px;
+      }
+      .service-content {
+        article {
+          color: $secondary-color;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  //========================== why us==============================
+  .why-us {
+    padding: 1.5rem;
+    .why-us-1 {
+      h4 {
+        font-size: 18px;
+      }
+      h2 {
+        font-family: $font-h4;
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 23px;
+      }
+      article {
+        color: $primary-color;
+        font-size: 13px;
+
+        transition: transform 1.3s ease;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          svg {
+            color: $bright-color;
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+    .why-us-2 {
+      img {
+        max-width: 100%;
+        background-color: $bright-color;
+      }
+    }
+  }
+  //========================== percentage==============================
+  .Percentage {
+    padding: 1.5rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 @media screen and (min-width: 600px) {
 }
@@ -368,7 +638,7 @@ $font-h2: "Suranna", serif;
         color: $bright-color;
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 22px;
       }
       h2 {
         font-family: $font-h4;
@@ -1482,7 +1752,7 @@ $font-h2: "Suranna", serif;
         margin-left: 0;
         margin-top: 0.4rem;
         margin-right: 0rem;
-        font-size: 18px;
+        font-size: 24px;
       }
       h2 {
         font-family: $font-h4;
@@ -2129,7 +2399,7 @@ $font-h2: "Suranna", serif;
         color: $bright-color;
         font-weight: 500;
 
-        font-size: 18px;
+        font-size: 24px;
       }
       h2 {
         font-family: $font-h4;
@@ -2203,7 +2473,7 @@ $font-h2: "Suranna", serif;
         margin-left: 0;
         margin-top: 0.4rem;
         margin-right: 0rem;
-        font-size: 18px;
+        font-size: 24px;
       }
       h2 {
         font-family: $font-h4;

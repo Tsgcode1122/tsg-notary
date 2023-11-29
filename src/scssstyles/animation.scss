@@ -1,11 +1,11 @@
 /* animation */
 
 .swipe-up {
-  animation: swipeUp 1s ease-in-out;
+  animation: swipeUp 1.5s ease-in-out;
 }
 @keyframes swipeUp {
   from {
-    transform: translateY(20%);
+    transform: translateY(10%);
   }
   to {
     transform: translateY(0);
@@ -34,6 +34,20 @@
 @keyframes swipeRightAnimation {
   0% {
     transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 
+ */
+.swipe-left {
+  animation: swipeLeftAnimation 0.5s ease-in-out;
+}
+
+@keyframes swipeLeftAnimation {
+  0% {
+    transform: translateX(20%);
   }
   100% {
     transform: translateX(0);
