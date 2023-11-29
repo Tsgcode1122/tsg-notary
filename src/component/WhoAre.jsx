@@ -1,5 +1,6 @@
 import React from "react";
 import whoareimg from "../images/whoweare.jpg";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import serviceareaimg from "../images/servicearea.jpg";
 import Exceptionimg from "../images/weight.jpg";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -89,7 +90,9 @@ const WhoAre = () => {
             Experience notary services where excellence is not just promised;
             it's our everyday commitment to you.
           </article>
-          <button>Contact Us Today!!!</button>
+          <Link to="/ContactPage">
+            <button>Contact Us Today!!!</button>
+          </Link>
         </div>
       </section>
     </>
