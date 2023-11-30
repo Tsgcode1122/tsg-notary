@@ -9,7 +9,7 @@ import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Faqs = () => {
   useLeftToRightSwipe(".Faqs-heading");
-  useRightToLeftSwipe(".Faqs-img");
+
   const Faqs = [
     // {
     //   id: 1,
