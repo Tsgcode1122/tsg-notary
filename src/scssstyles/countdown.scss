@@ -1,0 +1,674 @@
+$icon-height: 30px;
+$HomeSmall-font: 21px;
+$articleSmall-font: 16px;
+$articleSmallSize-font: 15px;
+$articleBig-font: 20px;
+$HomeSmallSize-font: 22px;
+$HomeBig-font: 35px;
+$HomeBigger-font: 50px;
+$primary-color: white;
+$secondary-color: #020a81;
+$bright-color: #fda700;
+$font-family: "Gelasio", serif;
+$font-article: Inconsolata, monospace;
+$font-h4: "Gelasio", serif;
+$font-h2: "Suranna", serif;
+
+.sale-page {
+  margin: 0rem;
+  padding: 10px;
+  box-shadow:
+    0 2px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f2f2f2;
+  border-radius: 10px 10px;
+  background-color: none;
+  .sale-head {
+    h2 {
+      font-family: $font-h4;
+      color: $secondary-color;
+      font-weight: 500;
+      font-size: 25px;
+    }
+    p {
+      font-family: $font-h4;
+      font-style: italic;
+      color: $bright-color;
+      font-weight: 500;
+
+      font-size: 18px;
+    }
+  }
+  .sale-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      text-align: center;
+      color: $secondary-color;
+      box-shadow:
+        0 1px 3px rgba(21, 21, 21, 0.5),
+        0 1px 2px rgba(34, 34, 34, 0.1);
+      border-radius: 20px 20px;
+      border: 0.1px solid $bright-color;
+    }
+  }
+}
+.offer-content {
+  margin: 2rem;
+  display: block;
+
+  // padding-left: 0.5rem;
+  // padding-right: 0.5rem;
+  // padding-bottom: 0.5rem;
+  // padding-top: 0.5rem;
+  button {
+    right: 0;
+    background-color: $primary-color;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    box-shadow:
+      0 2px 30px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid $bright-color;
+    border-radius: 50%;
+    max-width: 100%;
+    font-size: 15px;
+    color: $bright-color;
+    margin-bottom: -1rem;
+    animation: pump 3s infinite;
+  }
+  @keyframes pump {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .sale-page {
+    margin: 1rem;
+    padding: 5px;
+
+    .sale-head {
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 22px;
+      }
+      p {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+        padding: 0;
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+
+      div {
+        padding: 10px;
+        text-align: center;
+        color: $secondary-color;
+        box-shadow:
+          0 1px 3px rgba(21, 21, 21, 0.5),
+          0 1px 2px rgba(34, 34, 34, 0.1);
+        border-radius: 20px 20px;
+        border: 0.1px solid $bright-color;
+      }
+    }
+  }
+  .offer-content {
+    margin: 0rem;
+    display: block;
+
+    button {
+      right: 0;
+      background-color: $primary-color;
+      margin-right: 1.5rem;
+      margin-top: 1rem;
+      display: flex;
+      position: absolute;
+
+      border: 1px solid $bright-color;
+      border-radius: 50%;
+      max-width: 100%;
+      font-size: 15px;
+      color: $bright-color;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+    @keyframes pump {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media (min-width: 321px) and (max-width: 399px) {
+  .sale-page {
+    margin: 0rem;
+    padding: 10px;
+    box-shadow:
+      0 2px 30px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f2f2f2;
+    border-radius: 10px 10px;
+    background-color: none;
+    .sale-head {
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem;
+        text-align: center;
+        color: $secondary-color;
+        box-shadow:
+          0 1px 3px rgba(21, 21, 21, 0.5),
+          0 1px 2px rgba(34, 34, 34, 0.1);
+        border-radius: 20px 20px;
+        border: 0.1px solid $bright-color;
+      }
+    }
+  }
+  .offer-content {
+    margin: 1rem;
+    display: block;
+    button {
+      right: 0;
+      background-color: $primary-color;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      display: flex;
+      position: absolute;
+      padding: 10px;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid $bright-color;
+      border-radius: 50%;
+      max-width: 100%;
+      font-size: 15px;
+      color: $bright-color;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+    @keyframes pump {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .sale-page {
+    margin: 0rem;
+    padding: 10px;
+    box-shadow:
+      0 2px 30px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f2f2f2;
+    border-radius: 10px 10px;
+    background-color: none;
+    .sale-head {
+      h2 {
+        font-family: $font-h4;
+        color: $secondary-color;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-family: $font-h4;
+        font-style: italic;
+        color: $bright-color;
+        font-weight: 500;
+
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8rem;
+        text-align: center;
+        color: $secondary-color;
+        box-shadow:
+          0 1px 3px rgba(21, 21, 21, 0.5),
+          0 1px 2px rgba(34, 34, 34, 0.1);
+        border-radius: 20px 20px;
+        border: 0.1px solid $bright-color;
+      }
+    }
+  }
+  .offer-content {
+    margin: 1rem;
+    display: block;
+    button {
+      right: 0;
+      background-color: $primary-color;
+      margin-right: 2rem;
+      margin-top: 1rem;
+      display: flex;
+      position: absolute;
+      padding: 10px;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid $bright-color;
+      border-radius: 50%;
+      max-width: 100%;
+      font-size: 15px;
+      color: $bright-color;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+    @keyframes pump {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .sale-page {
+    margin: 0rem;
+    padding: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+        color: $secondary-color;
+        box-shadow:
+          0 1px 3px rgba(21, 21, 21, 0.5),
+          0 1px 2px rgba(34, 34, 34, 0.1);
+        border-radius: 20px 20px;
+        border: 0.1px solid $bright-color;
+      }
+    }
+  }
+  .offer-content {
+    margin: 2rem;
+    display: block;
+
+    button {
+      right: 0;
+      background-color: $primary-color;
+      margin-right: 3rem;
+      margin-top: 1rem;
+      display: flex;
+      position: absolute;
+      padding: 10px;
+      box-shadow:
+        0 2px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid $bright-color;
+      border-radius: 50%;
+      max-width: 100%;
+      font-size: 15px;
+      color: $bright-color;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+    @keyframes pump {
+      0% {
+        transform: scale(0.8);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .sale-page {
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+  .offer-content {
+    margin: 2rem;
+    display: block;
+
+    button {
+      right: 0;
+      margin-right: 3rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .sale-page {
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 550px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+  .offer-content {
+    margin: 2rem;
+    button {
+      margin-right: 3rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .sale-page {
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 550px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 20px;
+      }
+    }
+  }
+  .offer-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    button {
+      margin-right: 3rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .sale-page {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 27px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 80px;
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 22px;
+      }
+    }
+  }
+  .offer-content {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    button {
+      margin-right: 5rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+}
+@media screen and (min-width: 1200px) {
+  .sale-page {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 27px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 80px;
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 22px;
+      }
+    }
+  }
+  .offer-content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    button {
+      margin-right: 7rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}
+@media screen and (min-width: 1300px) {
+}
+@media screen and (min-width: 1400px) {
+  .sale-page {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0rem;
+    padding-right: 7rem;
+    padding-left: 2rem;
+
+    .sale-head {
+      h2 {
+        font-weight: 500;
+        font-size: 27px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .sale-count {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 80px;
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        font-size: 25px;
+      }
+    }
+  }
+  .offer-content {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+    button {
+      margin-right: 7rem;
+      margin-top: 1rem;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: -1rem;
+      animation: pump 3s infinite;
+    }
+  }
+}

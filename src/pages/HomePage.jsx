@@ -13,6 +13,7 @@ import Getin from "../component/Getin";
 import Footer from "../component/Footer";
 import ScrollToTopButton from "../component/ScrollToTopButton";
 import ContactBox from "../component/ContactBox";
+import SalePage from "../component/SalePage";
 
 const HomePage = () => {
   const initialText = "Certified Notary Services for Every Document";
@@ -43,7 +44,10 @@ const HomePage = () => {
     }, 350);
     return () => clearInterval(textInterval);
   }, [displayedText, isDeleting, textIndex]);
-
+  useEffect(() => {
+    // Scroll to the top on component mount
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />
@@ -73,8 +77,9 @@ const HomePage = () => {
       <div className="Cont-Design">
         <ContactBox />
       </div>
-
+      <SalePage />
       <WhoAre />
+
       <Whychoose />
       <ServicesList />
       <WhyUs />
