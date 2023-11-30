@@ -73,12 +73,9 @@ const Faqs = () => {
         <div className="Faqs-heading">
           <h4> Faqs</h4>
           <article>
-            Welcome to our Frequently Asked Questions (FAQs) section! We
-            understand that navigating notary services can sometimes be
-            confusing, and we're here to provide clarity. Below, you'll find
-            answers to some common questions about our notary services. If you
-            don't see your question here, feel free to contact us directly for
-            personalized assistance.
+            Welcome to our FAQs! Navigating notary services can be confusing,
+            but we're here to provide clarity. Find answers to common questions
+            below. If yours isn't here, contact us for personalized assistance.
           </article>
         </div>
 

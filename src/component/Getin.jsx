@@ -20,14 +20,11 @@ const Getin = () => {
           <h4>Contact us</h4>
           <h2>Get in Touch with TSG Notary Service</h2>
           <article>
-            Need help with our notary services? The TSG Notary Service team is
-            here for you! Whether you're scheduling an appointment, have
-            questions about our services, or just want to connect, we're a
-            message away. Your satisfaction is our priority, and we strive to
-            offer prompt and reliable support. Reach out via the contact form
-            below, or use the provided contact details to connect directly.
-            Thank you for considering TSG Notary Service for your needs; we look
-            forward to providing you with seamless and certified notary
+            Get assistance with our notary services from the TSG Notary Service
+            team! Whether scheduling, inquiring about services, or connecting,
+            we're just a message away.Contact us through the form below or use
+            the provided details. Thanks for considering TSG Notary Service; we
+            look forward to providing you with seamless and certified notary
             services.
           </article>
         </div>

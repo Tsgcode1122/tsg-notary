@@ -10,7 +10,7 @@ $primary-color: white;
 $secondary-color: #020a81;
 $bright-color: #fda700;
 $font-family: "Gelasio", serif;
-$font-article: Inconsolata, monospace;
+$font-article: "Barlow", sans-serif;
 $font-h4: "Gelasio", serif;
 $font-h2: "Suranna", serif;
 
@@ -28,7 +28,6 @@ $font-h2: "Suranna", serif;
     text-align: left;
     padding: 0;
     margin: 0;
-
     h4 {
       font-family: $font-h4;
       font-style: italic;
@@ -45,10 +44,11 @@ $font-h2: "Suranna", serif;
     }
     article {
       color: $secondary-color;
-      font-size: 15px;
+      font-size: 16px;
       font-family: $font-article;
       line-height: 1.5;
       text-align: justify;
+
       font-weight: normal;
     }
   }
