@@ -152,7 +152,7 @@ const Footer = () => {
           </article>
           <h4>
             <a href="http://softwebsitedesigns.com/">
-              Develop and design by Tsg
+              Developed and designed by Tsg
             </a>
           </h4>
         </div>

@@ -13,7 +13,7 @@ import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 
 const WhoAre = () => {
   useLeftToRightSwipe(".who-we-context");
-  useRightToLeftSwipe(".service-area-context");
+  useZoomInAnimation(".service-area-context");
   useZoomInAnimation(".Exception-context");
   return (
     <>

@@ -15,7 +15,7 @@ import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const WhyUs = () => {
   useLeftToRightSwipe(".h2-why");
-  useRightToLeftSwipe(".why-us-2");
+  useZoomInAnimation(".why-us-2");
   return (
     <>
       <section className="why-us">

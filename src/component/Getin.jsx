@@ -11,7 +11,7 @@ import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Getin = () => {
   useLeftToRightSwipe(".Contact-context");
   useLeftToRightSwipe(".map");
-  useRightToLeftSwipe(".map-img");
+  useZoomInAnimation(".map-img");
 
   return (
     <>
