@@ -7,7 +7,7 @@ import useRightToLeftSwipe from "../animation/useRightToLeftSwipe";
 import useTopToBottomSwipe from "../animation/useTopToBottomSwipe";
 import useBottomToTopSwipe from "../animation/useBottomToTopSwipe";
 const Percentage = () => {
-  useLeftToRightSwipe(".percentimgs");
+  // useLeftToRightSwipe(".percentimgs");
   useEffect(() => {
     const percentageContainers = document.querySelectorAll(".progress-bar");
 

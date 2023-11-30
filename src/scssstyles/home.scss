@@ -246,8 +246,8 @@ body {
     height: 80vh;
   }
   .text-container {
-    padding: 8rem 2rem;
-    max-width: 60%;
+    padding: 14rem 2rem;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -265,10 +265,10 @@ body {
       }
     }
     article {
-      font-size: $articleBig-font;
+      font-size: 23px;
     }
     h1 {
-      font-size: $HomeBig-font;
+      font-size: 45px;
       margin: 0;
     }
   }
@@ -276,11 +276,11 @@ body {
 
 @media screen and (min-width: 800px) {
   .home {
-    height: 90vh;
+    height: 80vh;
   }
   .text-container {
-    padding: 12rem 2rem;
-    max-width: 50%;
+    padding: 20rem 2rem;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -297,10 +297,10 @@ body {
       }
     }
     article {
-      font-size: $articleBig-font;
+      font-size: 23px;
     }
     h1 {
-      font-size: $HomeBig-font;
+      font-size: 45px;
       margin: 0;
     }
   }

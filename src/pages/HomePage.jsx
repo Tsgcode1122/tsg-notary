@@ -86,6 +86,7 @@ const HomePage = () => {
       <Percentage />
       <Faqs />
       <Getin />
+
       <Footer />
       <ScrollToTopButton />
     </>
