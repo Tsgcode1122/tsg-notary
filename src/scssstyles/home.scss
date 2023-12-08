@@ -10,8 +10,9 @@ $primary-color: white;
 $secondary-color: #020a81;
 $bright-color: #fda700;
 $font-family: "Gelasio", serif;
+$font-hero: "Kanit", sans-serif;
 $font-h4: "Gelasio", serif;
-$font-article: "Gelasio", serif;
+$font-article: "Barlow", sans-serif;
 body {
   margin: 0;
 }
@@ -81,10 +82,12 @@ body {
   }
   article {
     font-size: $articleSmall-font;
+    font-family: $font-article;
   }
   h1 {
     font-size: $HomeBig-font;
     font-family: $font-family;
+
     margin: 0;
     span {
       color: $bright-color;
