@@ -4,7 +4,8 @@ import "../scssstyles/countdown.scss";
 import { AiOutlineClose } from "react-icons/ai";
 
 const SalePage = () => {
-  const endDate = "2024-2-30T23:58:59";
+  const endDate = "2024-02-29T23:58:59";
+
   const [showCountdown, setShowCountdown] = useState(true);
 
   const handleCancel = () => {
